@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class AT01_NaviagateToGGwebsite {
 
-
+// Navigate to website
     @Test
     public static void Nav() throws IOException {
         OpenBrowser.NavToWebsite(ReadPropertiesFile.PropFile("GoodGuysHomePage"));
