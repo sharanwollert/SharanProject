@@ -1,0 +1,12 @@
+
+Scenario: Navigate to HN website                           [90m# src/test/java/FeatureFiles/FF01_NavigateToHNWebsite.feature:10[0m
+  [32mGiven [0m[32mopen the Browser and enter url and press enter key[0m [90m# StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key()[0m
+  [32mThen [0m[32msystem should navigate to HomePage of HN Website[0m    [90m# StepDefinations.SD01_NavigateToHNWebsite.system_should_navigate_to_home_page_of_hn_website()[0m
+
+Scenario: Navigate to HN website                           [90m# src/test/java/FeatureFiles/FF02_NavigateToechoechoWebsite.feature:10[0m
+  [32mGiven [0m[32mopen the Browser and enter url and press enter key[0m [90m# StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key()[0m
+
+@SmokeTest
+Scenario: Navigate to login screen                         [90m# src/test/java/FeatureFiles/FF03_NavigateToLoginScreen.feature:5[0m
+  [32mGiven [0m[32mopen the Browser and enter url and press enter key[0m [90m# StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key()[0m
+  [32mThen [0m[32mclick on account link[0m                               [90m# StepDefinations.SD02_NavigateToLoginScreen.click_on_account_link()[0m
