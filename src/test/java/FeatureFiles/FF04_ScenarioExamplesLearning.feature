@@ -1,5 +1,6 @@
 # Feature  is like user story
 Feature: Registration Screen
+  #
 # Scenario is like a test case and "Scenario Outline" means we are getting test data and using it in the code
   Scenario Outline: Creating Multiple Accounts
     # we have codd for this below 2 lines
