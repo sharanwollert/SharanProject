@@ -19,8 +19,8 @@ public class AT03_StringInt {
     @Test
     public void test04(){
         //local variables
-        String test01= "Sharan";
-        String Test02="Sravanthi";
+        String test01= "Sravanthi";
+        String Test02="Sharan";
         String Test03=test01+" "+Test02;
         System.out.println("value of Test03 is : "+Test03);
     }
