@@ -8,5 +8,94 @@ Scenario: Navigate to HN website                           [90m# src/test/java/
 
 @SmokeTest
 Scenario: Navigate to login screen                         [90m# src/test/java/FeatureFiles/FF03_NavigateToLoginScreen.feature:5[0m
+  [31mGiven [0m[31mopen the Browser and enter url and press enter key[0m [90m# StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key()[0m
+      [31morg.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO-PULI1216', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\shara\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b1b2b9490229ed7c154cdd8345dd63d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at BaseClass.OpenBrowser.NavToWebsite(OpenBrowser.java:24)
+	at CucumberScripts.AT01_NaviagateToGGwebsite.Nav(AT01_NaviagateToGGwebsite.java:15)
+	at StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key(SD01_NavigateToHNWebsite.java:13)
+	at ✽.open the Browser and enter url and press enter key(file:///C:/Users/shara/SharanProject%20(1)/SharanProjectFolder/src/test/java/FeatureFiles/FF03_NavigateToLoginScreen.feature:6)
+[0m
+  [36mThen [0m[36mclick on account link[0m                               [90m# StepDefinations.SD02_NavigateToLoginScreen.click_on_account_link()[0m
+
+Scenario Outline: Creating Multiple Accounts               [90m# src/test/java/FeatureFiles/FF04_ScenarioExamplesLearning.feature:18[0m
   [32mGiven [0m[32mopen the Browser and enter url and press enter key[0m [90m# StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key()[0m
-  [32mThen [0m[32mclick on account link[0m                               [90m# StepDefinations.SD02_NavigateToLoginScreen.click_on_account_link()[0m
+  [31mThen [0m[31mclick on account link[0m                               [90m# StepDefinations.SD02_NavigateToLoginScreen.click_on_account_link()[0m
+      [31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO-PULI1216', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\shara\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64418}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ade74bc8f28974f37984b8b7266e84e1
+*** Element info: {Using=xpath, value=//a[@class='my-account-icon disp-block']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at StepDefinations.SD02_NavigateToLoginScreen.click_on_account_link(SD02_NavigateToLoginScreen.java:12)
+	at ✽.click on account link(file:///C:/Users/shara/SharanProject%20(1)/SharanProjectFolder/src/test/java/FeatureFiles/FF04_ScenarioExamplesLearning.feature:8)
+[0m
+  [36mThen [0m[36mclick on create an account button[0m                   [90m# StepDefinations.SD04_ScenarioExamplesLearning.click_on_create_an_account_button()[0m
+  [36mThen [0m[36mCustomer enters FirstName as [0m[36m[1m"FirstName01"[0m          [90m# StepDefinations.SD04_ScenarioExamplesLearning.customer_enters_first_name_as(java.lang.String)[0m
+  [36mThen [0m[36mCustomer enters LastName as [0m[36m[1m"LastName01"[0m            [90m# StepDefinations.SD04_ScenarioExamplesLearning.customer_enters_last_name_as(java.lang.String)[0m
+
+Scenario Outline: Creating Multiple Accounts               [90m# src/test/java/FeatureFiles/FF04_ScenarioExamplesLearning.feature:19[0m
+  [31mGiven [0m[31mopen the Browser and enter url and press enter key[0m [90m# StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key()[0m
+      [31morg.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO-PULI1216', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\shara\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 929fbfa38df7b787fc36abab87c18f74
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at BaseClass.OpenBrowser.NavToWebsite(OpenBrowser.java:24)
+	at CucumberScripts.AT01_NaviagateToGGwebsite.Nav(AT01_NaviagateToGGwebsite.java:15)
+	at StepDefinations.SD01_NavigateToHNWebsite.open_the_browser_and_enter_url_and_press_enter_key(SD01_NavigateToHNWebsite.java:13)
+	at ✽.open the Browser and enter url and press enter key(file:///C:/Users/shara/SharanProject%20(1)/SharanProjectFolder/src/test/java/FeatureFiles/FF04_ScenarioExamplesLearning.feature:7)
+[0m
+  [36mThen [0m[36mclick on account link[0m                               [90m# StepDefinations.SD02_NavigateToLoginScreen.click_on_account_link()[0m
+  [36mThen [0m[36mclick on create an account button[0m                   [90m# StepDefinations.SD04_ScenarioExamplesLearning.click_on_create_an_account_button()[0m
+  [36mThen [0m[36mCustomer enters FirstName as [0m[36m[1m"FirstName02"[0m          [90m# StepDefinations.SD04_ScenarioExamplesLearning.customer_enters_first_name_as(java.lang.String)[0m
+  [36mThen [0m[36mCustomer enters LastName as [0m[36m[1m"LastName02"[0m            [90m# StepDefinations.SD04_ScenarioExamplesLearning.customer_enters_last_name_as(java.lang.String)[0m

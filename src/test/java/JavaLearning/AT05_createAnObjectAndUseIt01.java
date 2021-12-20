@@ -25,8 +25,8 @@ public class AT05_createAnObjectAndUseIt01 {
 
     public void test09(){
         //local variables
-        String test01= "Software";
-        String Test02="testlab";
+        String test01= "Sharan";
+        String Test02="Sravanthi";
         String Test03=test01+" "+Test02;
         System.out.println("value of Test03 is : "+Test03);
     }
