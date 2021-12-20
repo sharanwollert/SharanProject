@@ -9,8 +9,8 @@ public class AT03_StringInt {
     @Test
     public void test03(){
         //local variables
-        int i=80;
-        int j=160;
+        int i=90;
+        int j=100;
         int k= i+j;
         //print on console
         System.out.println("value of K is : "+k);
