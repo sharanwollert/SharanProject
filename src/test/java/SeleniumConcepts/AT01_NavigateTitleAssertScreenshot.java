@@ -45,8 +45,7 @@ public class AT01_NavigateTitleAssertScreenshot {
         //Assertion version-2
         Assert.assertTrue(ActualTitle.contains("Computers"));
         //Screenshots
-        File screenshotFile = ((TakesScreenshot)OpenBrowser.driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshotFile, new File("C:\\Users\\etikalaj\\screenshot.png"));
+
 
         //get this data drom baseclass
         OpenBrowser.closeBrowser();

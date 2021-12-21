@@ -4,15 +4,13 @@ import org.junit.Test;
 
 public class AT03_StringInt {
 
-    //how to declare integers
-    //how to declare integers
-    //how to declare integers
-    //how to declare integers
+
+    //this is how we declare integers
     @Test
     public void test03(){
         //local variables
-        int i=90;
-        int j=100;
+        int i=100;
+        int j=20;
         int k= i+j;
         //print on console
         System.out.println("value of K is : "+k);
@@ -23,8 +21,8 @@ public class AT03_StringInt {
         //local variables
         //local variables
         //local variables
-        String test01= "Sravanthi";
-        String Test02="SharanRao";
+        String test01= "Sharan";
+        String Test02="Nishka";
         String Test03=test01+" "+Test02;
         System.out.println("value of Test03 is : "+Test03);
     }
